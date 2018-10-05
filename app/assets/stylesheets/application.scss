@@ -1,0 +1,255 @@
+body {
+  font-family: "Roboto";
+}
+
+img {
+  height: 100px;
+  object-fit: contain;
+}
+
+a {
+  color: black;
+}
+
+.auth-nav {
+  background-color: #16b3d9;
+  display: flex;
+  justify-content: space-between;
+}
+
+#left-nav {
+  color: white;
+}
+
+#right-nav {
+
+}
+
+.nav-section {
+  background-color: #16b3d9;
+  display: flex;
+}
+
+.nav-button {
+  min-width: 70px;
+  width: 10vw;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button > a {
+    color: white;
+}
+
+.home-page-container{
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 20vh;
+  width: 80vw;
+  height: 40vh;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "top-row top-row top-row" "bottom-left bottom-middle bottom-right";
+  align-items: center;
+}
+
+.home-page-container * {
+  text-align: center;
+}
+
+#homepage-header {
+  grid-area: top-row;
+  background-color: white;
+  margin-top: 2%;
+  font-size: 50px;
+
+}
+
+.home-icon {
+  background-color: #16b3d9;
+  padding: 40px;
+  border-radius: 12px;
+  width: 12vw;
+  height: 4vh;
+  justify-self: center;
+}
+
+.home-icon > a {
+  color: white;
+}
+
+#cohorts {
+  grid-area: bottom-left;
+}
+
+#students {
+  grid-area: bottom-middle;
+}
+
+#projects {
+  grid-area: bottom-right;
+}
+
+//Cohort pages
+
+.title-header {
+  font-size: 44px;
+  text-align: center;
+  margin-top: 12vh;
+}
+
+.cohort-index-container {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  justify-items: center;
+}
+
+.cohort-index-button {
+  display: flex;
+  width: 12vw;
+  height: 12vh;
+  background-color: lightgrey;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+
+}
+
+
+.mod1{
+  border-style: solid;
+  border-color: #75b74f;
+  border-width: 4px;
+}
+
+.mod2{
+  border-style: solid;
+  border-color: #e0a945;
+  border-width: 4px;
+}
+.mod3{
+  border-style: solid;
+  border-color: #ffef80;
+  border-width: 4px;
+}
+.mod4{
+  border-style: solid;
+  border-color: #847abb;
+  border-width: 4px;
+}
+.mod5 {
+  border-style: solid;
+  border-color: #cc4747;
+  border-width: 4px;
+
+}
+.mod6{
+  border-style: solid;
+  border-color: #16b3d9;
+  border-width: 4px;
+
+
+}
+
+//Student pages
+
+.student-index-container {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 5vh;
+  width: 80vw;
+  height: 40vh;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-gap: 1%;
+}
+
+.student-info-container {
+  width: 12vw;
+  height: 24vh;
+  background-color: lightgrey;
+  padding: 15px;
+  margin: 10px;
+  align-content: center;
+  text-align: center;
+  border-radius: 12px;
+}
+
+
+.profile-image-thumbnail {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-thumbnail * {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-full-image * {
+  width: 100%;
+  height: 100%;
+}
+
+.project-thumbnail *{
+  width: 100%;
+  height: 100%;
+}
+
+
+.project-full-image * {
+  width: 100%;
+  height: 100%;
+}
+
+//Student Show Page
+.profile-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin: 30px;
+  gap: 10px;
+}
+
+.profile-left {
+  text-align: center;
+}
+
+.profile-project {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.profile-project-left {
+  width: 20%;
+  max-height: 100%;
+  object-fit: contain;
+  margin: 20px;
+}
+
+.profile-project-right {
+  font-size: 20px;
+  margin: 20px;
+}
+
+.form-container * {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+  gap: 5px;
+}
+
+//Account pages
+
+.account-buttons {
+  display: flex;
+  justify-content: left;
+}

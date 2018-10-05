@@ -1,0 +1,44 @@
+<div class="profile-container">
+
+<div class="profile-left">
+<div class="profile-full-image"><%= image_tag @user.image_url %> </div>
+<div><%= @user.full_name %></div>
+<div>Cohort <%= link_to @cohort.name, @cohort %></div>
+<% if @cohort.current_mod <= 5 %>
+<div>Current Mod: <%= @cohort.current_mod %></div>
+<% else %>
+<div>Graduated</div>
+<% end %>
+<div><%=link_to" #{@user.first_name}'s Github", @user.github_link  %></div>
+
+</div>
+
+
+
+
+<div class="profile-right">
+
+
+<div class="profile-projects-container">
+
+    <% @projects.each do |project| %>
+    <div class="profile-project">
+      <div class="profile-project-left">
+        <div class="project-full-image"><%= image_tag project.image_url %></div>
+
+      </div>
+      <div class="profile-project-right">
+        <div>Module <%= project.mod_created %> Project:</div>
+        <div><%= project.title %></div>
+        <div><%= link_to "View Project on Github", project.github_link %></div>
+      </div>
+    </div>
+    <% end %>
+
+
+</div>
+</div>
+
+
+
+</div>

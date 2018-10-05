@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AccessLabsProjectSite</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+  <header>
+    <nav class="auth-nav">
+          <div id="left-nav" class="nav-section">
+            <div class="nav-button"><%= link_to "HOME", root_path %></div>
+            <div class="nav-button"><%= link_to "COHORTS", cohorts_path %></div>
+            <div class="nav-button"><%= link_to "STUDENTS", users_path %></div>
+            <div class="nav-button"><%= link_to "PROJECTS", '/projects' %></div>
+          </div>
+          <% unless @current_user %>
+          <div id="right-nav" class="nav-section">
+            <div class="nav-button"><a href="<%= new_session_path %>">LOG IN</a></div>
+            <div class="nav-button"><a href="<%= new_user_path %>">SIGN UP</a></div>
+          </div>
+          <% else %>
+          <div id="right-nav" class="nav-section">
+            <div class="nav-button"><%= link_to "ACCOUNT", user_projects_path(@current_user) %></div>
+            <div class="nav-button"><%= form_tag sessions_path, method: :delete do %>
+                <%= submit_tag "LOG OUT" %>
+              <% end %>
+            </div>
+          </div>
+          <% end %>
+    </nav>
+      <% if @message %>
+      <div class="message">
+        <%= @message %>
+      </div>
+      <% end %>
+      <% if @errors %>
+      <ul class="errors">
+        <% @errors.each do |error| %>
+          <li>
+            <%= error %>
+          </li>
+        <% end %>
+      </ul>
+      <% end %>
+  </header>
+    <%= yield %>
+  </body>
+</html>
