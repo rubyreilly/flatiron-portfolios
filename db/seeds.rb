@@ -10,12 +10,16 @@ User.destroy_all
 Project.destroy_all
 Cohort.destroy_all
 
-# cohort9=Cohort.create(current_mod: 0, start_date: Time.new(2018,10,8))
-cohort8 = Cohort.create(current_mod: 1, start_date: Time.new(2018,9,17))
-cohort7 = Cohort.create(current_mod: 2, start_date: Time.new(2018,8,27))
-cohort6=Cohort.create(current_mod: 3, start_date: Time.new(2018,8,6))
-cohort5=Cohort.create(current_mod: 4, start_date: Time.new(2018,7,16))
-cohort4=Cohort.create(current_mod: 5, start_date: Time.new(2018,6,25))
+cohort12=Cohort.create(current_mod: 1, start_date: Time.new(2018,12,10))
+cohort11 = Cohort.create(current_mod: 2, start_date: Time.new(2018,11,19))
+cohort10 = Cohort.create(current_mod: 3, start_date: Time.new(2018,10,29))
+cohort9=Cohort.create(current_mod: 4, start_date: Time.new(2018,10,8))
+
+cohort8 = Cohort.create(current_mod: 5, start_date: Time.new(2018,9,17))
+cohort7 = Cohort.create(current_mod: 6, start_date: Time.new(2018,8,27))
+cohort6=Cohort.create(current_mod: 6, start_date: Time.new(2018,8,6))
+cohort5=Cohort.create(current_mod: 6, start_date: Time.new(2018,7,16))
+cohort4=Cohort.create(current_mod: 6, start_date: Time.new(2018,6,25))
 cohort3=Cohort.create(current_mod: 6, start_date: Time.new(2018,6,4))
 cohort2=Cohort.create(current_mod: 6, start_date: Time.new(2018,5,14))
 cohort1=Cohort.create(current_mod: 6, start_date: Time.new(2018,4,23))

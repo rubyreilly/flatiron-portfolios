@@ -1,24 +1,44 @@
-# README
+# Flatiron Portfolio
+Ruby on Rails web app built to encourage project sharing among the community of learners and creators at the Flatiron School.
++ Implemented backend structure and frontend routes using Ruby on Rails (Ruby version 2.5.0)
++ Created user interface with HTML and CSS
++ Used object oriented Ruby and MVC for organization and structure
++ Utilized Bcrypt for authorization and authentication
++ Developed using git branching for project management
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![main.png](main.png)
 
-Things you may want to cover:
+## Development Setup
+Run the rails API with
 
-* Ruby version
+```bash
+bundle install
+rails db:create
+rails db:migrate
+rails db:seed
+rails s
+```
 
-* System dependencies
+## Usage Example
 
-* Configuration
+![profile.png](profile.png)
 
-* Database creation
++ Users can make an account with a secure password
++ Users can edit their account information
++ Users can add, delete, and edit projects with an image and link to GitHub repo
++ Users can browse other users' projects
 
-* Database initialization
 
-* How to run the test suite
+## Contributing
+1.  Fork it (https://github.com/rubyreilly/flatiron-portfolios/fork)
+2.  Create your feature branch (`git checkout -b feature/fooBar`)
+3.  Commit your changes (`git commit -m 'Added fooBar'`)
+4.  Push to the branch (`git push origin feature/fooBar`)
+5.  Create a new Pull Request
 
-* Services (job queues, cache servers, search engines, etc.)
+## Contributors
++ Ruby Reilly
++ Jordan Martin
 
-* Deployment instructions
-
-* ...
+## Contact
+Ruby Reilly – [my github](https://github.com/rubyreilly) – [rubyclaroreilly@gmail.com](mailto:rubyclaroreilly@gmail.com)
